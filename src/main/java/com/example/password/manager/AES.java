@@ -54,15 +54,5 @@ public class AES {
         return new String(decrypted, StandardCharsets.UTF_8);
 
     }
-
-    public static void main(String[] args) {
-        final String password = "bmaniacs";
-        final String key = "b17maniacsL";
-        System.out.println("Password: " + password);
-        String enc_output = encrypt(password, key);
-        System.out.println("Encrypted text: " + enc_output);
-        String dec_output = decrypt(enc_output, key);
-        System.out.println("Decrypted text: " + dec_output);
-    }
 }
 
